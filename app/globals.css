@@ -1,26 +1,189 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --bg-deep: #0a0c10;
+  --bg-surface: #0e1016;
+  --bg-card: #12141b;
+  --bg-elevated: #171a22;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --text-primary: #d4d0c8;
+  --text-secondary: #8e8b82;
+  --text-muted: #5a574f;
+  --text-dim: #3d3b36;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-line: rgba(255, 255, 255, 0.08);
+
+  --accent-amber: #c49a5c;
+  --accent-amber-dim: rgba(196, 154, 92, 0.15);
+  --accent-blue: #6e8da8;
+  --accent-blue-dim: rgba(110, 141, 168, 0.12);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+}
+
+/* Wet Glass Film Grain */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Rain streak effect — vertical lines down the viewport */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 998;
+  opacity: 0.018;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 47px,
+    rgba(180, 200, 220, 0.3) 47px,
+    rgba(180, 200, 220, 0.1) 48px,
+    transparent 49px,
+    transparent 120px,
+    rgba(180, 200, 220, 0.2) 120px,
+    rgba(180, 200, 220, 0.05) 121px,
+    transparent 122px
+  );
+}
+
+/* Hairline Borders */
+.hairline-border {
+  border: 1px solid var(--border-subtle);
+}
+
+.hairline-bottom {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hairline-top {
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Minimal Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Vinyl Spin */
+@keyframes spin-vinyl {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-vinyl {
+  animation: spin-vinyl 22s linear infinite;
+}
+
+/* Equalizer Bars */
+@keyframes bar-1 {
+  0%, 100% { height: 20%; }
+  50% { height: 90%; }
+}
+@keyframes bar-2 {
+  0%, 100% { height: 80%; }
+  50% { height: 25%; }
+}
+@keyframes bar-3 {
+  0%, 100% { height: 35%; }
+  50% { height: 75%; }
+}
+
+.anim-bar-1 { animation: bar-1 0.75s ease-in-out infinite; }
+.anim-bar-2 { animation: bar-2 0.65s ease-in-out infinite; }
+.anim-bar-3 { animation: bar-3 0.85s ease-in-out infinite; }
+
+/* Rain drop fall for cover */
+@keyframes rain-fall {
+  0% { transform: translateY(-10px); opacity: 0; }
+  10% { opacity: 0.4; }
+  90% { opacity: 0.4; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes bokeh-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.12; }
+  33% { transform: translate(8px, -6px) scale(1.05); opacity: 0.18; }
+  66% { transform: translate(-5px, 4px) scale(0.97); opacity: 0.1; }
+}
+
+.animate-bokeh-1 { animation: bokeh-drift 12s ease-in-out infinite; }
+.animate-bokeh-2 { animation: bokeh-drift 16s ease-in-out infinite 2s; }
+.animate-bokeh-3 { animation: bokeh-drift 14s ease-in-out infinite 5s; }
+
+/* Fade entrance */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+.animate-fade-up-delay-1 {
+  animation: fade-up 0.6s ease-out 0.15s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.6s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-3 {
+  animation: fade-up 0.6s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-vinyl {
+    animation: none !important;
+  }
+  body::after {
+    display: none;
+  }
 }
