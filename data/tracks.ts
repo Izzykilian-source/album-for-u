@@ -25,9 +25,9 @@ export const tracks: Track[] = [
     trackCode: "A-01",
     title: "Intro",
     artist: "Personal voice recording",
-    audioUrl: "/music/intro.mp3",
+    audioUrl: "/music/intro.m4a",
     type: "spoken",
-    duration: "01:15",
+    duration: "00:57",
     recordedAt: "01:42 AM",
     linerNote: [
       "Suaraku mungkin agak serak di rekaman ini. Waktu itu sudah lewat jam satu malam, dan aku merekam semuanya sendirian di kos, saat suasana sudah cukup sepi.",
