@@ -29,12 +29,10 @@ export default function EndingScreen({
         </h2>
         <div className="text-[14px] sm:text-[15px] font-serif text-[#8e8b82] leading-[1.85] space-y-3">
           <p>
-            Semua lagu di album ini selesai. Tapi perasaanku waktu merekam lagu-lagu ini
-            akan tetap sama, tak peduli berapa jarak yang memisahkan kita berdua saat ini.
+            albumnya belum selesai disini sih, bakal update terus, waalaupunn nanti kita sudah ngga jadi kita lagii mwmeheheeh
           </p>
           <p>
-            Sampai hari di mana kita akhirnya bisa ketemu langsung untuk pertama kalinya,
-            buka lagi link ini kapan pun kamu rindu atau butuh teman di malam yang sepi.
+            sampaiii saatt ituuu punn kamuu akan tetep bisa akses album inii dann akuu akan selalu update mwehehheheh
           </p>
           <p className="text-xs font-mono text-[#3d3b36] pt-2">
             Recorded in 2026. Keep this link safe.

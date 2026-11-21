@@ -28,7 +28,7 @@ export default function InterludeScreen({
         </h2>
         <p className="text-sm font-serif text-[#8e8b82] leading-[1.85]">
           Ini rekaman suara singkat sebelum kita masuk ke lagu berikutnya.
-          Lagu setelah ini adalah alasan kenapa aku berani menyelesaikan semua rekaman ini.
+          iniii laguu kesukaan kamuuuuu
         </p>
       </div>
 
