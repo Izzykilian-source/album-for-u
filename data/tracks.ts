@@ -30,12 +30,9 @@ export const tracks: Track[] = [
     duration: "00:57",
     recordedAt: "01:42 AM",
     linerNote: [
-      "Suaraku mungkin agak serak di rekaman ini. Waktu itu sudah lewat jam satu malam, dan aku merekam semuanya sendirian di kos, saat suasana sudah cukup sepi.",
-      "Sebelum kamu mulai mendengarkan, aku cuma mau bilang terima kasih sudah meluangkan waktu untuk membuka album kecil ini.",
-      "Aku membuat ini bukan untuk menunjukkan seberapa bagus aku bernyanyi. Sebenarnya, ada beberapa hal yang ingin aku sampaikan, tapi rasanya tidak selalu mudah untuk diucapkan secara langsung.",
-      "Jadi, aku coba menyampaikannya lewat lagu-lagu ini.",
-      "Tidak semuanya sempurna, tapi semuanya aku rekam sendiri, khusus untuk kamu.",
-      "Anggap saja ini teman kecil untuk menemani waktu luangmu. Semoga ada satu atau dua lagu yang bisa kamu ingat setelah selesai mendengarkannya.",
+      "semogaaa tidakk mengecewakan dan tidakk menghancurkan ekspetasii kamuu ya bee",
+      "sebelumm kamu dengerinnn sekalii lagiii akuu sangat sangatt berterima kasihhh ke kamuu",
+      "akuuu tauuu hasill rekamannya jelekk pastii tapiii akuu benerann bisa jaminn akuu melakukan semua yang akuu bisa mwehehehe so, anggap saja ini teman kecil untuk menemani waktu luangmu. semoga ada satu atau dua lagu yang bisa kamu ingat setelah selesai mendengarkannya.",
       "Selamat mendengarkan, ya."
     ],
   },

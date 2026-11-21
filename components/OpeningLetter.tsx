@@ -55,8 +55,7 @@ export default function OpeningLetter({
 
             {/* Brief quote */}
             <p className="text-sm font-serif text-[#8e8b82] leading-relaxed max-w-sm italic animate-fade-up-delay-2">
-              &ldquo;Kita memang belum pernah ketemu langsung, tapi lewat rekaman lagu-lagu ini,
-              aku ingin suaraku menemanimu malam ini.&rdquo;
+              &ldquo;Haiiiii beeee akuuu buat inii karena akuu sangat sangatt berterimakasiiih karena kamu selalu appreciate apapun yang akuuu lakukan untuk kamu.&rdquo;
             </p>
 
             {/* Actions */}
@@ -88,33 +87,33 @@ export default function OpeningLetter({
 
             {/* Letter Body */}
             <div className="text-[14px] sm:text-[15px] font-serif text-[#9e9a90] leading-[1.85] space-y-4 max-h-[52vh] overflow-y-auto pr-3 custom-scrollbar">
-              <p>Hai,</p>
+              <p>hai beee,</p>
               <p>
-                Kita memang belum pernah bertemu secara langsung. Selama ini, kita hanya saling mengenal lewat pesan, telepon, voice note, dan obrolan-obrolan kecil yang kadang berlangsung sampai larut malam.
+                halaupun aku tauu kitaa nggga akan bisa ketemuu in real life, akuu sangatt sangatt menikmatii momenn inii ketika bersama kamu.
               </p>
               <p>
-                Walaupun begitu, entah bagaimana, kamu sudah menjadi bagian dari keseharianku.
+                akuuu sangatt senanngg sekalii bisa ketemu kamuu dan bisa kenal sama kamuu walaupun akuu selalu gangguin kamuu mwehehehe dan tanpa sadar kamuu menjadii bagian dari keseharianku.
               </p>
               <p>
-                Aku memang bukan orang yang pandai mengungkapkan perasaan lewat kata-kata. Tapi ada beberapa hal yang rasanya lebih mudah disampaikan lewat lagu.
+                akuu sangatttt senang kamu selaluu apprecia hal hal yang aku lakukan untuk kamuu, akuu sangatt berterimaa kasihhhh
               </p>
               <p>
-                Jadi, beberapa malam terakhir, aku mencoba merekam beberapa lagu ini. Satu per satu, dengan suaraku sendiri, sesederhana yang aku bisa.
+                soooo aku mencoba merekam beberapa lagu ini. satu per satu, dengan suaraku sendiri, sesederhana yang aku bisa.
               </p>
               <p>
-                Mungkin hasilnya tidak sempurna, tapi semuanya aku rekam dengan sungguh-sungguh. Anggap saja ini caraku berbagi sesuatu yang selama ini ingin aku sampaikan.
+                walaupuunn akuu tauu hasilnyaa jelekk karna kualitas audioo dan suarakuu memangg bwuoooossookk mwehehehehe tapiiii akuu harapp kamuu ga nyesel dengerinnyaa
               </p>
               <p>
-                Ada satu lagu khusus di trek terakhir, lagu dari The 1975 yang sering kamu putar. Aku juga ingin mencoba menyanyikannya untukmu.
+                ada satu lagu khusus di trek terakhir, laguu yang kamuu bilang kamuu sukaa walaupunn sakitt lagunyaa hehehehee
               </p>
               <p>
-                Jadi, pakai earphone-mu dan dengarkan dari awal, ya. Tidak perlu terburu-buru.
+                kamuuu bisa dengerinn iniii kapannpunn kamuu mauuuu
               </p>
               <p>
-                Semoga kamu suka.
+                semoga kamu suka.
               </p>
               <p className="pt-2 italic text-[#c4bfb2]">
-                Dan semoga suatu hari nanti, kita bisa mendengarkan lagu-lagu ini bersama, bukan lagi lewat layar.
+                yaaaa ini ngarep ngarepaann kuu ajaaa sii, semogaaa nanti aku bisa nyanyiin kamuu langsunggg di depannn kamuuu mwehehehehehe loppp uuu ❤
               </p>
             </div>
 
